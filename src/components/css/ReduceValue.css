@@ -1,0 +1,115 @@
+.reduce-value-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/src/assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.top-right-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  max-width: 15%; /* או גודל אחר שמתאים לך */
+  height: auto;
+  max-height: 15%; /* אם אתה רוצה גם להגביל גובה */
+  z-index: 10;
+}
+.reduce-value-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+}
+
+.success-charge-image {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  width: 30%;
+  height: auto;
+}
+
+.free-charge-container {
+  position: absolute;
+  top: 70%; /* קצת מתחת ל-mission3 */
+  right: 2%; /* בדיוק כמו המשימות */
+  width: 30%;
+  height: auto;
+}
+
+.free-charge-image {
+  width: 100%;
+  height: auto;
+}
+
+.stored-value-tag {
+  position: absolute;
+  top: 69%;
+  left: 15.8%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.mission-image {
+  position: absolute;
+  width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+
+.mission1 {
+  top: 5%;
+  right: 2%;
+}
+
+.mission2 {
+  top: 25%;
+  right: 2%;
+}
+
+.mission3 {
+  top: 45%;
+  right: 2%;
+}
+
+/* .mission-image.active {
+  border: 2px solid blue;
+}
+
+.confir-button {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #1a18ae;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10; */
+  .approval-button {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    width: 30%;
+    height: auto;
+  }
+  
+  .approval-img {
+   width: 40%;
+    height: 40%;
+ 
+  
+  }
+  

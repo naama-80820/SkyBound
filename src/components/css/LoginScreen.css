@@ -1,0 +1,90 @@
+/* Reset everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Make sure all root containers take full width */
+  html, body, #root, .app-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style your main screen container */
+  .screen-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('-SkyBound--main\src\assets\background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  /* Input Box Styling */
+  .card-input-box {
+    width: 500px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .card-number-input {
+    position: absolute;
+    bottom: 58px; /* Adjust to align exactly with the blue underscores */
+    left: 48%;
+    transform: translateX(-50%);
+    width: 65%; /* Match the width of the underscores */
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #000;
+    letter-spacing: 8px; /* Adjust to match spacing between underscores */
+    caret-color: #000; /* Make cursor visible */
+    font-weight: bold;
+  }
+  
+  .card-number-input::placeholder {
+    opacity: 0; /* Hide placeholder text */
+  }
+  
+  /* Remove default underline or decoration */
+  .card-number-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+  
+  /* Confirm Button Styling */
+  .confirm-button {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease; /* Smooth transition for opacity change */
+    outline: none; /* Remove outline on focus */
+  }
+  
+  .confirm-button:active {
+    opacity: 0.7; /* Slightly fade when clicked */
+    transform: scale(0.98); /* Slightly shrink when clicked */
+  }
+  
+  .confirm-button:focus {
+    outline: none; /* Remove outline on focus */
+  }

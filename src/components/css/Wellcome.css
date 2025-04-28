@@ -1,0 +1,99 @@
+.welcome-container {
+    background-image: url("/src/assets/images/background.png"); /* הוספת תמונת רקע */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .welcome-header {
+    margin-bottom: 20px;
+  }
+  
+  .welcome-header img {
+    width: 500px;
+    height: auto;
+  }
+  
+  .question-text {
+    margin-bottom: 20px;
+  }
+  
+  .question-text img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .welcome-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .flight-button {
+    margin-right: 250px;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .transit-button {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .flight-button img,
+  .transit-button img {
+    width: 250px;
+    height: auto;
+  }
+
+  /* Wellcome.css */
+
+.welcome-container {
+  /* סגנונות קיימים */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-header {
+  /* סגנונות קיימים */
+  margin-bottom: 20px;
+}
+
+.question-text {
+  /* סגנונות קיימים */
+  margin-bottom: 30px;
+  position: relative; /* כדי לאפשר מיקום אבסולוטי של הילד */
+}
+
+.card-number-on-lines {
+  letter-spacing: 7px; /* Adjust to match spacing between underscores */
+
+  position: absolute;
+
+  /* כעת נצטרך להתאים את הערכים הבאים כדי למקם את המספר בדיוק על הקווים */
+  top: 44%; /* נסה להתחיל במיקום אנכי מרכזי */
+  left: 50%; /* נסה להתחיל במיקום אופקי מרכזי */
+  transform: translate(-50%, -50%); /* כדי למרכז את ה-div ביחס לנקודה שצויינה */
+  font-size: 1.5em; /* התאם את גודל הפונט לפי הצורך */
+  font-weight: bold; /* אם אתה רוצה שהמספר יהיה בולט */
+  color: black; /* או כל צבע שמתאים */
+  /* הוסף סגנונות נוספים לפי הצורך (גופן, ריווח פנימי וכו') */
+}
+
+.welcome-buttons {
+  /* סגנונות קיימים */
+  display: flex;
+  gap: 20px;
+}
+
+/* ייתכן שיהיו סגנונות נוספים */
